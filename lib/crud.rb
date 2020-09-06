@@ -10,7 +10,7 @@ class Crud
   end
 
   def send_data(data)
-    self .class.post('/users', data)
+    self.class.post('/users', data)
   end
 
   def update_data(data, id)
