@@ -15,8 +15,6 @@ module AASS
 
     res.click
 
-    puts driver.title
-
     driver.quit
   end
 end
