@@ -8,7 +8,7 @@ module AASS
     driver.navigate.to "http://google.com"
 
     element = driver.find_element(name: 'q')
-    element.send_keys "software automated testing"
+    element.send_keys 'ethiopia'
     element.submit
 
     res = driver.find_element(:css, '.g a')
