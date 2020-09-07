@@ -12,13 +12,13 @@ end
 
 # uncomment the line to run each method
 
-# AASS.selenium
+AASS.selenium
 
 
 crud = Crud.new
 
-response = crud.retrieve_data
-list_users(JSON.parse(response.body))
+# response = crud.retrieve_data
+# list_users(JSON.parse(response.body))
 
 user = {
   name: 'morpheus',
@@ -36,4 +36,4 @@ updated_user = {
 
 # response = crud.delete_data(1)
 
-puts response.code, response.body
+# puts response.code, response.body
