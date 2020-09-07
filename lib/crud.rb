@@ -1,4 +1,3 @@
-# frozen_string_literal: true
 require 'httparty'
 
 class Crud
@@ -20,5 +19,4 @@ class Crud
   def delete_data(id)
     self.class.delete("/users/#{id}")
   end
-
 end

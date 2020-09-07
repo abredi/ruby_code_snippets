@@ -3,7 +3,6 @@ require_relative '../lib/selenium'
 require_relative '../lib/crud'
 require 'json'
 
-
 def list_users(users)
   puts "Total users(#{users["total"]})"
   users['data'].each do |user|
@@ -15,7 +14,9 @@ end
 
 # AASS.selenium
 
+
 crud = Crud.new
+
 response = crud.retrieve_data
 list_users(JSON.parse(response.body))
 
@@ -35,5 +36,4 @@ updated_user = {
 
 # response = crud.delete_data(1)
 
-
-
+puts response.code, response.body
